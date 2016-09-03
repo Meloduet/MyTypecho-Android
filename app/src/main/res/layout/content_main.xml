@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.meloduet.android.mytypecho.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <include
+            android:id="@+id/post_view"
+            layout="@layout/post_view" />
+        <include
+            android:id="@+id/list_view"
+            layout="@layout/list_view" />
+        <include
+            android:id="@+id/setting_view"
+            layout="@layout/setting_view" />
+    </ViewFlipper>
+</RelativeLayout>
